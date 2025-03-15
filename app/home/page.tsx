@@ -7,7 +7,7 @@ export default function Page() {
       <div className="max-w-lg text-center inline-block">
         <div className="flex flex-col items-center justify-center gap-1">
           <div className={title()}>
-            OPTI Finance
+            bruceFi
           </div>
           <div className={subtitle()}>
             Maximize Profit, Minimize Effort.
