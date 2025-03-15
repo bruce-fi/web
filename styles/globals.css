@@ -1,0 +1,372 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'FilsonPro';
+  src: url('/fonts/FilsonProThin.otf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FilsonPro';
+  src: url('/fonts/FilsonProRegular.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FilsonPro';
+  src: url('/fonts/FilsonProMedium.otf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FilsonPro';
+  src: url('/fonts/FilsonProBold.otf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FilsonPro';
+  src: url('/fonts/FilsonProHeavy.otf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FilsonPro';
+  src: url('/fonts/FilsonProBlack.otf');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FilsonPro';
+  src: url('/fonts/FilsonProExtraBold.otf');
+  font-weight: 900;
+  font-style: normal;
+}
+
+* {
+  font-family: 'FilsonPro', sans-serif;
+}
+
+.custom_connect {
+  background: #0052ff !important;
+}
+
+.full-height {
+  height: 100vh !important;
+}
+
+.recharts-tooltip-wrapper {
+  background-color: transparent;
+}
+
+.recharts-tooltip-wrapper:hover {
+  background: transparent;
+}
+
+
+.recharts-tooltip-wrapper::before {
+  background: transparent;
+}
+
+.recharts-tooltip-wrapper::after {
+  background: transparent;
+}
+
+@layer base {
+  .dark {
+    .asfafdaf {
+      color: #ffffff;
+    }
+
+    .ock-font-family {
+      font-weight: 400;
+    }
+
+    .ock-text-inverse {
+      color: #ffffff;
+    }
+
+    .ock-text-foreground {
+      color: #ffffff;
+    }
+
+    .ock-text-foreground-muted {
+      color: #d1d5db;
+    }
+
+    .ock-text-error {
+      color: #ef4444;
+    }
+
+    .ock-text-primary {
+      color: #ffffff;
+    }
+
+    .ock-text-success {
+      color: #22c55e;
+    }
+
+    .ock-text-warning {
+      color: #facc15;
+    }
+
+    .ock-text-disabled {
+      color: #6b7280;
+    }
+
+    .ock-bg-default {
+      background-color: #000000;
+    }
+
+    .ock-bg-default-hover {
+      background-color: #111111;
+    }
+
+    .ock-bg-default-active {
+      background-color: #1f1f1f;
+    }
+
+    .ock-bg-alternate {
+      background-color: #1a1a1a;
+    }
+
+    .ock-bg-alternate-hover {
+      background-color: #2c2c2c;
+    }
+
+    .ock-bg-alternate-active {
+      background-color: #3d3d3d;
+    }
+
+    .ock-bg-inverse {
+      background-color: #ffffff;
+    }
+
+    .ock-bg-inverse-hover {
+      background-color: #e5e7eb;
+    }
+
+    .ock-bg-inverse-active {
+      background-color: #d1d5db;
+    }
+
+    .ock-bg-primary {
+      background-color: #0052ff;
+    }
+
+    .ock-bg-primary-hover {
+      background-color: #111111;
+    }
+
+    .ock-bg-primary-active {
+      background-color: #1f1f1f;
+    }
+
+    .ock-bg-primary-washed {
+      background-color: #9ca3af;
+    }
+
+    .ock-bg-primary-disabled {
+      background-color: #6b7280;
+    }
+
+    .ock-bg-secondary {
+      background-color: #1a1a1a;
+    }
+
+    .ock-bg-secondary-hover {
+      background-color: #2c2c2c;
+    }
+
+    .ock-bg-secondary-active {
+      background-color: #3d3d3d;
+    }
+
+    .ock-bg-error {
+      background-color: #ef4444;
+    }
+
+    .ock-bg-warning {
+      background-color: #facc15;
+    }
+
+    .ock-bg-success {
+      background-color: #22c55e;
+    }
+
+    .ock-bg-default-reverse {
+      background-color: #ffffff;
+    }
+
+    .ock-icon-color-primary {
+      color: #ffffff;
+    }
+
+    .ock-icon-color-foreground {
+      color: #ffffff;
+    }
+
+    .ock-icon-color-foreground-muted {
+      color: #d1d5db;
+    }
+
+    .ock-icon-color-inverse {
+      color: #000000;
+    }
+
+    .ock-icon-color-error {
+      color: #ef4444;
+    }
+
+    .ock-icon-color-success {
+      color: #22c55e;
+    }
+
+    .ock-icon-color-warning {
+      color: #facc15;
+    }
+
+    .ock-line-primary {
+      border-color: #ffffff;
+    }
+
+    .ock-line-default {
+      border-color: #2c2c2c;
+    }
+
+    .ock-line-heavy {
+      border-color: #6b7280;
+    }
+
+    .ock-line-inverse {
+      border-color: #d1d5db;
+    }
+
+    .ock-border-default {
+      border-color: #000;
+    }
+
+    [data-testid="SwapTokensButton"] {
+      background-color: rgb(37, 99, 235);
+    }
+
+    [data-testid="ockSwap_Title"] {
+      display: none;
+    }
+
+    [data-testid="ockSwap_Container"] {
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 12px;
+    }
+
+    [data-testid="ockConnectButton"] {
+      background: transparent;
+    }
+
+    [data-testid="ockConnectWallet_Connected"] {
+      background: transparent;
+    }
+
+    [data-testid="ockTokenRow_Container"] {
+      background: rgb(0, 0, 0) !important;
+    }
+
+    [data-testid="ockTokenSelectDropdown_List"] {
+      z-index: 99999 !important;
+    }
+
+    [data-testid="ockSwapMessage_Message"] {
+      text-align: center;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(193, 193, 193);
+  border-radius: 4px;
+}
+
+/* Loading */
+@keyframes drop {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(80px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.lava-lamp {
+  position: relative;
+  width: 50px;
+  height: 100px;
+  background: #000;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.bubble {
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(to bottom, #e64980, #ff8787);
+  border-radius: 50%;
+  left: 15px;
+  animation: drop 5s ease-in-out infinite;
+}
+.bubble1 {
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(to bottom, #82c91e, #3bc9db);
+  border-radius: 50%;
+  left: 1px;
+  animation: drop 3s ease-in-out infinite;
+}
+.bubble2 {
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(to bottom, #7950f2, #f783ac);
+  border-radius: 50%;
+  left: 30px;
+  animation: drop 4s ease-in-out infinite;
+}
+.bubble3 {
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(to bottom, #4481eb, #04befe);
+  border-radius: 50%;
+  left: 20px;
+  animation: drop 6s ease-in-out infinite;
+}
