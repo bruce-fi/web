@@ -56,7 +56,7 @@ export const siteConfig = {
     },
   ],
   links: {
-    github: "https://github.com/opti-fi",
+    github: "https://github.com/bruce-fi",
     docs: "https://kbaji.gitbook.io/optifinance",
   },
 };
